@@ -28,3 +28,12 @@ function to24hourtime(hour, minute, period) {
 }
 
 // or
+
+function to24hourtime(hour, minute, period) {
+  const pad = s => `${s}`.padStart(2,'0'),
+    converter = {
+      'am': (h,m)=> `${pad((h%12))}${pad(minute)}`,
+      'pm': (h,m)=> `${h === 12 ? '12' : pad((h+12)%24)}${pad(minute)}`
+    }
+  return converter[period](hour,minute)
+}
