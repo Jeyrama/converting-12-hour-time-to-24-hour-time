@@ -14,3 +14,6 @@ Notes:
   On 12-hours clock, there is no 0 hour, and time just after midnight is denoted as, 
   for example, 12:15 am. On 24-hour clock, this translates to 0015.
 */
+
+
+// Solution
